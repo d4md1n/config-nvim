@@ -9,6 +9,7 @@ return { -- Highlight, edit, and navigate code
 			local parsers = {
 				"bash",
 				"c",
+				"cpp",
 				"diff",
 				"html",
 				"lua",
