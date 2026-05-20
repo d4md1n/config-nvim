@@ -5,7 +5,11 @@ return {
 		-- Ensure C/C++ debugger is installed
 		"mason-org/mason.nvim",
 		optional = true,
-		opts = { ensure_installed = { "codelldb" } },
+		opts = { ensure_installed = {
+			"codelldb",
+			"java-debug-adapter",
+			"java-test",
+		} },
 	},
 	opts = function()
 		local dap = require("dap")
@@ -43,5 +47,15 @@ return {
 				},
 			}
 		end
+
+		dap.configurations.java = {
+			{
+				type = "java",
+				request = "attach",
+				name = "Debug (Attach) - Remote",
+				hostName = "127.0.0.1",
+				port = 5005,
+			},
+		}
 	end,
 }

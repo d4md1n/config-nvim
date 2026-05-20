@@ -13,6 +13,7 @@ return { -- Highlight, edit, and navigate code
 				"diff",
 				"html",
 				"lua",
+				"java",
 				"luadoc",
 				"markdown",
 				"markdown_inline",

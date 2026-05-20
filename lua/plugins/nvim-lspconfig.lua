@@ -158,7 +158,12 @@ return {
 			},
 			-- gopls = {},
 			pyright = {},
-			jdtls = {},
+			jdtls = {
+				command = { "jdtls" },
+				env= {
+                                    JAVA_TOOL_OPTIONS= "-javaagent:~/.config/lombok.jar"
+				}
+			},
 			gradle_ls = {},
 			-- rust_analyzer = {},
 			--
