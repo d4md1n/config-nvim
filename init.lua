@@ -57,7 +57,6 @@ vim.diagnostic.config({
 })
 
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
-vim.keymap.set("n", "<leader>n", "<cmd>NeoTreeShowToggle<CR>", { desc = "NeoTree Show Toggle" })
 
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
@@ -110,6 +109,7 @@ require("lazy").setup({
 	require("plugins.blink-cmp"),
   require("plugins.clangd_extensions"),
 	require("plugins.nvim-dap"),
+  require("plugins.refactoring"),
 	icons = vim.g.have_nerd_font and {} or {
 		cmd = "⌘",
 		config = "🛠",

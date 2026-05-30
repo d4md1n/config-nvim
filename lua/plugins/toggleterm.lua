@@ -1,3 +1,4 @@
+vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 return {
 	--- Improved terminal toggle
 	"akinsho/toggleterm.nvim",
@@ -13,7 +14,7 @@ return {
 					return vim.o.columns * 0.4
 				end
 			end,
-			open_mapping = [[<leader>vt]],
+			open_mapping = [[<leader>tt]],
 			insert_mappings = false,
 			--direction = 'vertical' | 'horizontal' | 'tab' | 'float',
 			direction = "horizontal",
