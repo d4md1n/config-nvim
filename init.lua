@@ -110,6 +110,7 @@ require("lazy").setup({
   require("plugins.clangd_extensions"),
 	require("plugins.nvim-dap"),
   require("plugins.refactoring"),
+  require("plugins.markdown"),
 	icons = vim.g.have_nerd_font and {} or {
 		cmd = "⌘",
 		config = "🛠",
