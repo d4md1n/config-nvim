@@ -4,6 +4,7 @@
 
 ```
 brew install tree-sitter-cli
+brew install pyright
 ```
 
 ```
